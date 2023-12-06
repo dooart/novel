@@ -28,6 +28,14 @@ module.exports = {
           800: "var(--novel-stone-800)",
           900: "var(--novel-stone-900)",
         },
+        // custom
+        background: "hsl(var(--novel-c-background))",
+        foreground: "hsl(var(--novel-c-foreground))",
+        border: "hsl(var(--novel-c-border))",
+        muted: {
+          DEFAULT: "hsl(var(--novel-c-muted))",
+          foreground: "hsl(var(--novel-c-muted-foreground))",
+        },
       },
     },
   },

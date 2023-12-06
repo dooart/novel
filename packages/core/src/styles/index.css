@@ -48,9 +48,11 @@
   --novel-highlight-orange: #5c3a1a;
   --novel-highlight-pink: #5c1a3a;
   --novel-highlight-gray: #3a3a3a;
-}
 
-@font-face {
-  font-family: "Cal Sans";
-  src: local("Cal Sans"), url(CalSans-SemiBold.otf) format("otf");
+  /* custom styles */
+  --novel-c-background: 222.2 84% 4.9%;
+  --novel-c-foreground: 210 40% 98%;
+  --novel-c-muted: 217.2 32.6% 17.5%;
+  --novel-c-muted-foreground: 215 20.2% 65.1%;
+  --novel-c-border: 217.2 32.6% 17.5%;
 }

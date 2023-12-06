@@ -350,20 +350,20 @@ const CommandList = ({
     <div
       id="slash-command"
       ref={commandListContainer}
-      className="novel-z-50 novel-h-auto novel-max-h-[330px] novel-w-72 novel-overflow-y-auto novel-rounded-md novel-border novel-border-stone-200 novel-bg-white novel-px-1 novel-py-2 novel-shadow-md novel-transition-all"
+      className="novel-z-50 novel-h-auto novel-max-h-[330px] novel-w-72 novel-overflow-y-auto novel-rounded-md novel-border novel-border-border novel-bg-background novel-px-1 novel-py-2 novel-shadow-md novel-transition-all"
     >
       {items.map((item: CommandItemProps, index: number) => {
         return (
           <button
-            className={`novel-flex novel-w-full novel-items-center novel-space-x-2 novel-rounded-md novel-px-2 novel-py-1 novel-text-left novel-text-sm novel-text-stone-900 hover:novel-bg-stone-100 ${
+            className={`novel-flex novel-w-full novel-items-center novel-space-x-2 novel-rounded-md novel-px-2 novel-py-1 novel-text-left novel-text-sm novel-text-foreground hover:dark:bg-muted/50 ${
               index === selectedIndex
-                ? "novel-bg-stone-100 novel-text-stone-900"
+                ? "novel-bg-muted/50"
                 : ""
             }`}
             key={index}
             onClick={() => selectItem(index)}
           >
-            <div className="novel-flex novel-h-10 novel-w-10 novel-items-center novel-justify-center novel-rounded-md novel-border novel-border-stone-200 novel-bg-white">
+            <div className="novel-flex novel-h-10 novel-w-10 novel-items-center novel-justify-center novel-rounded-md novel-border novel-border-border novel-bg-background">
               {item.title === "Continue writing" && isLoading ? (
                 <LoadingCircle />
               ) : (
@@ -372,7 +372,7 @@ const CommandList = ({
             </div>
             <div>
               <p className="novel-font-medium">{item.title}</p>
-              <p className="novel-text-xs novel-text-stone-500">
+              <p className="novel-text-xs novel-text-muted-foreground">
                 {item.description}
               </p>
             </div>
