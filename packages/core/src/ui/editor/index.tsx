@@ -16,10 +16,11 @@ import { ImageResizer } from "./extensions/image-resizer";
 import { EditorProps } from "@tiptap/pm/view";
 import { Editor as EditorClass, Extensions } from "@tiptap/core";
 import { NovelContext } from "./provider";
+import { cn } from "@/lib/utils";
 
 export default function Editor({
   completionApi = "/api/generate",
-  className = "novel-relative novel-min-h-[500px] novel-w-full novel-max-w-screen-lg novel-border-stone-200 novel-bg-white sm:novel-mb-[calc(20vh)] sm:novel-rounded-lg sm:novel-border sm:novel-shadow-lg",
+  className,
   defaultValue = defaultEditorContent,
   extensions = [],
   editorProps = {},
@@ -211,7 +212,7 @@ export default function Editor({
         onClick={() => {
           editor?.chain().focus().run();
         }}
-        className={className}
+        className={cn("novel-twp novel-relative novel-w-full novel-max-w-screen-lg", className)}
       >
         {editor && <EditorBubbleMenu editor={editor} />}
         {editor?.isActive("image") && <ImageResizer editor={editor} />}
