@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Editor as NovelEditor } from "novel";
+import { Editor as NovelEditor } from "novel-fork-dooart";
 
 export default function Editor() {
   const [saveStatus, setSaveStatus] = useState("Saved");
@@ -12,6 +12,7 @@ export default function Editor() {
         {saveStatus}
       </div>
       <NovelEditor
+        disableLocalStorage={true}
         onUpdate={() => {
           setSaveStatus("Unsaved");
         }}

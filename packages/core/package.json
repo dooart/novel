@@ -1,7 +1,7 @@
 {
-  "name": "novel",
+  "name": "novel-fork-dooart",
   "version": "0.1.22",
-  "description": "Notion-style WYSIWYG editor with AI-powered autocompletions",
+  "description": "Fork of novel",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -76,14 +76,12 @@
     "tsup": "^7.2.0",
     "typescript": "^4.9.4"
   },
-  "author": "Steven Tey <stevensteel97@gmail.com>",
-  "homepage": "https://novel.sh",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/steven-tey/novel.git"
+    "url": "git+https://github.com/dooart/novel.git"
   },
   "bugs": {
-    "url": "https://github.com/steven-tey/novel/issues"
+    "url": "https://github.com/dooart/novel/issues"
   },
   "keywords": [
     "ai",
