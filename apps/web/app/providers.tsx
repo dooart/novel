@@ -28,8 +28,8 @@ export default function Providers({ children }: { children: ReactNode }) {
     <ThemeProvider
       attribute="class"
       value={{
-        light: "light-theme",
-        dark: "dark-theme",
+        light: "light",
+        dark: "dark",
       }}
     >
       <AppContext.Provider
