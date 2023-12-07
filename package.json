@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "novel-fork-dooart",
   "scripts": {
     "build": "turbo build",
