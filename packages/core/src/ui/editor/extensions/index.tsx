@@ -13,7 +13,7 @@ import { InputRule } from "@tiptap/core";
 import UploadImagesPlugin from "@/ui/editor/plugins/upload-images";
 import UpdatedImage from "./updated-image";
 import CustomKeymap from "./custom-keymap";
-import DragAndDrop from "./drag-and-drop";
+// import DragAndDrop from "./drag-and-drop";
 // import TaskItem from "@tiptap/extension-task-item";
 // import TaskList from "@tiptap/extension-task-list";
 
@@ -140,5 +140,5 @@ export const defaultExtensions = [
     transformPastedText: true,
   }),
   CustomKeymap,
-  DragAndDrop,
+  // DragAndDrop,
 ];
