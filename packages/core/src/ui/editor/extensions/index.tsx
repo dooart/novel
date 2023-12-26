@@ -6,8 +6,6 @@ import Placeholder from "@tiptap/extension-placeholder";
 import TiptapUnderline from "@tiptap/extension-underline";
 import TextStyle from "@tiptap/extension-text-style";
 import { Color } from "@tiptap/extension-color";
-import TaskItem from "@tiptap/extension-task-item";
-import TaskList from "@tiptap/extension-task-list";
 import { Markdown } from "tiptap-markdown";
 import Highlight from "@tiptap/extension-highlight";
 import SlashCommand from "./slash-command";
@@ -16,6 +14,8 @@ import UploadImagesPlugin from "@/ui/editor/plugins/upload-images";
 import UpdatedImage from "./updated-image";
 import CustomKeymap from "./custom-keymap";
 import DragAndDrop from "./drag-and-drop";
+// import TaskItem from "@tiptap/extension-task-item";
+// import TaskList from "@tiptap/extension-task-list";
 
 export const defaultExtensions = [
   StarterKit.configure({
@@ -123,17 +123,17 @@ export const defaultExtensions = [
   Highlight.configure({
     multicolor: true,
   }),
-  TaskList.configure({
-    HTMLAttributes: {
-      class: "novel-not-prose novel-pl-2",
-    },
-  }),
-  TaskItem.configure({
-    HTMLAttributes: {
-      class: "novel-flex novel-items-start novel-my-4",
-    },
-    nested: true,
-  }),
+  // TaskList.configure({
+  //   HTMLAttributes: {
+  //     class: "novel-not-prose novel-pl-2",
+  //   },
+  // }),
+  // TaskItem.configure({
+  //   HTMLAttributes: {
+  //     class: "novel-flex novel-items-start novel-my-4",
+  //   },
+  //   nested: true,
+  // }),
   Markdown.configure({
     html: false,
     transformCopiedText: true,
