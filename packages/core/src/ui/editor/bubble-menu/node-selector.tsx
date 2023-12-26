@@ -122,7 +122,7 @@ export const NodeSelector: FC<NodeSelectorProps> = ({
               className="novel-flex novel-items-center novel-justify-between novel-rounded-sm novel-px-2 novel-py-1 novel-text-sm novel-text-stone-600 hover:novel-bg-stone-100"
               type="button"
             >
-              <div className="flex items-center space-x-2">
+              <div className="novel-flex novel-items-center novel-space-x-2">
                 <div className="novel-flex novel-items-center novel-space-x-2">
                   {" "}
                   <item.icon className="novel-h-3 novel-w-3" />
